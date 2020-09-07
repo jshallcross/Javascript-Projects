@@ -5,5 +5,71 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    background: whitesmoke;
     
+}
+h1 {
+   text-align: center;
+   margin: 4rem 0;
+   text-transform: uppercase;
+   letter-spacing: 1px; 
+}
+
+*/Loader*/
+.loader {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image COntainer*/
+
+.image-container {
+    margin: 10px 5%;
+    columns: 4;
+    column-gap: 1.8rem;
+}
+
+.image-container img {
+    width: 100%;
+    margin-bottom: 1.8rem;
+    border-radius: 7px;
+    transition: 0.4s transform ease-in-out;
+    
+}
+
+.image-container img:hover {
+    transform: scale(1.04);
+}
+
+
+
+/*Media Query*/
+
+@media only screen and (max-width:1000px) {
+    .image-container {
+        columns: 3;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .image-container {
+        columns: 2;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .image-container {
+        columns: 1;
+    }
 }
